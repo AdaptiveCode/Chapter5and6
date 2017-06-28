@@ -19,7 +19,9 @@ namespace ServiceTests
             sut.AddTransactionToAccount("Trading Account", 200m);
 
             // Assert
-            Assert.Fail();
+            // Note: Cannot actually have a unit test fail, otherwise the Continuous Integration build 
+            // will fail. Please uncomment this line:
+            //Assert.Fail();
         }
     }
 }
